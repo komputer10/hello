@@ -1,15 +1,15 @@
 <main class="w-full bg-white h-screen">
     <app-header></app-header>
-    <section class="w-full relative flex flex-col items-center justify-center h-full bg-white space-y-6">
+    <section id="pot" class="w-full relative flex flex-col items-center justify-center h-full bg-white space-y-6">
         <ng-container *ngIf="slide === 0">
-            <div class="flex flex-col w-full items-center justify-center">
+            <div class=" slide flex flex-col w-full items-center justify-center">
                 <img class="w-56 rounded-lg" src="assets/cutes-1.jpg" alt="">
                 <p class="font-primary text-xl font-bold">Hello Dinda Queen</p>
             </div>
         </ng-container>
 
         <ng-container *ngIf="slide === 1">
-            <div class="flex flex-col w-full items-center justify-center px-6">
+            <div class="slide flex flex-col w-full items-center justify-center px-6">
                 <p class="font-primary text-xl font-bold capitalize">Happy valentine sayang 💐</p>
                 <img class="w-56 rounded-lg" src="assets/makan.gif" alt="">
                 <p class="font-primary text-sm text-center">Terima kasih sudah sering menemaniku makan kentang di subiyet hehehe 🥰. Love bgt buat dinda sekebon 🫶
@@ -18,7 +18,7 @@
         </ng-container>
 
         <ng-container *ngIf="slide === 2">
-            <div class="flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
+            <div class="slide flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
                 <div class="w-full flex flex-row items-center space-x-4">
                     <p class="font-primary text-xl font-bold capitalize">Teruntuk Kesayanganku</p>
                     <img class="w-16" src="assets/reminder.gif" alt="">
@@ -41,7 +41,7 @@
             </div>
         </ng-container>
         <ng-container *ngIf="slide === 3">
-            <div class="flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
+            <div class="slide flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
                 <div class="w-full mt-8 flex flex-col items-center border-2 border-blue-500 rounded-lg px-4 py-6 relative">
                     <p class="px-6 py-2 bg-blue-500 rounded-full text-xs text-white absolute -top-4 left-8">Part 2</p>
                     <p class="text-sm text-black">Teruntuk berbiku, terima kasih ya buat semua yang udah kita laluin setiap hari, termasuk untuk hari ini 
@@ -67,7 +67,7 @@
         </ng-container>
 
         <ng-container *ngIf="slide === 4">
-            <div class="flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
+            <div class="slide flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
                 <div class="w-full mt-8 flex flex-col items-center border-2 border-blue-500 rounded-lg px-4 py-6 relative">
                     <p class="px-6 py-2 bg-blue-500 rounded-full text-xs text-white absolute -top-4 left-8">Permintaan Maaf</p>
                     <p class="text-sm text-black">Teruntuk berbiku, aku minta maaf kalau selama ini banyak kesalahan. terutama aku kadang ga jelas
@@ -91,7 +91,7 @@
         </ng-container>
 
         <ng-container *ngIf="slide === 5">
-            <div class="flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
+            <div class="slide flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
                 <img src="assets/cute.gif" alt="">
                 <p class="text-lg px-6 text-center text-blue-500 font-semibold mt-4">
                     Maaf ya kalau daily remindernya cuma segini, ga jelas dan kureng bgt heeheh🦖
@@ -100,11 +100,17 @@
         </ng-container>
 
         <ng-container *ngIf="slide === 6">
-            <div class="flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
+            <div class="slide flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
                 <img class="w-44" src="assets/cute-2.gif" alt="">
                 <p class="text-2xl px-6 text-center text-blue-500 font-semibold mt-4">
                     I Love Dinda Queen So Nucb 🥰🥰
                 </p>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="slide === 7">
+            <div class="slide flex flex-col w-full px-6 h-full justify-center items-center overflow-y-auto">
+                <img class="w-full object-fit" src="assets/bubu.gif" alt="">
             </div>
         </ng-container>
     </section>

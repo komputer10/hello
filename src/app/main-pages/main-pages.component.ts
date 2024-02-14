@@ -25,7 +25,7 @@ export class MainPagesComponent implements OnInit {
     }
   }
   onNext(event: any){
-    if(true && this.slide !== 6){
+    if(true && this.slide !== 7){
       this.slide = this.slide + 1;
     }
   }

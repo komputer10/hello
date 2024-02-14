@@ -1,0 +1,12 @@
+
+  .slide{
+    position: relative;
+    animation: myfirst 2s;
+    animation-direction: normal;
+  }
+
+  @keyframes myfirst {
+    0%   {right: 500px; left: -200px;}
+    50%  {right: 200px; left: 0px;}
+    100% {right: 0px; left: 0px;}
+  }
