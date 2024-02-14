@@ -9,6 +9,11 @@ export class MainPagesComponent implements OnInit {
   slide: number= 0;
 
   ngOnInit(): void {
+    setInterval(() => {
+      console.log('ulangi');
+      
+      this.playAudio();
+    }, 77000);
     this.playAudio();
   }
 
